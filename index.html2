@@ -1,0 +1,129 @@
+export default function RomanticSite() { const perguntas = [ { pergunta: 'Qual é a comida favorita do Angelo? 🍛', resposta: 'Arroz' }, { pergunta: 'Quem é a pessoa que o Angelo mais ama? ❤', resposta: 'Amanda' }, { pergunta: 'Quem é a pessoa que o Angelo menos gosta? 😂', resposta: 'Minha sogra' }, { pergunta: 'Quem deixa o Angelo mais feliz? ✨', resposta: 'Amanda' }, { pergunta: 'Quem é a mulher mais linda do mundo? 😍', resposta: 'Amanda' } ]
+
+return ( <div className="min-h-screen bg-gradient-to-b from-pink-100 via-rose-200 to-red-300 text-gray-800 overflow-hidden relative"> <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_left,_white,_transparent_40%)]"></div>
+
+<div className="max-w-6xl mx-auto px-6 py-10 relative z-10">
+    <div className="bg-white/70 backdrop-blur-lg rounded-[40px] shadow-2xl border border-white/40 p-8 md:p-14">
+
+      <div className="text-center">
+        <h1 className="text-5xl md:text-7xl font-extrabold text-rose-600 animate-pulse">
+          Angelo ❤ Amanda
+        </h1>
+
+        <p className="mt-6 text-lg md:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
+          Esse site foi feito especialmente pra garota mais incrível desse mundo.
+          Talvez eu não seja o melhor programador do planeta…
+          mas com certeza fui o namorado mais apaixonado enquanto fazia isso. 😌❤
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-3 gap-6 mt-12">
+        <div className="bg-white rounded-3xl p-6 shadow-xl hover:scale-105 transition duration-300">
+          <h2 className="text-2xl font-bold text-rose-500 mb-3">✨ Seu sorriso</h2>
+          <p>
+            Tem o poder absurdo de melhorar qualquer dia ruim meu.
+          </p>
+        </div>
+
+        <div className="bg-white rounded-3xl p-6 shadow-xl hover:scale-105 transition duration-300">
+          <h2 className="text-2xl font-bold text-rose-500 mb-3">💕 Nosso amor</h2>
+          <p>
+            É minha coisa favorita no mundo inteiro.
+          </p>
+        </div>
+
+        <div className="bg-white rounded-3xl p-6 shadow-xl hover:scale-105 transition duration-300">
+          <h2 className="text-2xl font-bold text-rose-500 mb-3">🌎 Meu futuro</h2>
+          <p>
+            Toda vez que penso nele… você automaticamente aparece nele.
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-14 bg-gradient-to-r from-rose-500 to-pink-500 text-white rounded-[35px] p-8 shadow-2xl">
+        <h2 className="text-4xl font-extrabold mb-5 text-center">
+          Carta digital pra Amanda 💌
+        </h2>
+
+        <p className="text-lg leading-9 text-center max-w-4xl mx-auto">
+          Amanda, eu queria fazer algo diferente pra você.
+          Não só uma mensagem comum…
+          mas algo que tivesse a nossa cara.
+          
+          Você é a melhor parte dos meus dias.
+          A pessoa que consegue me fazer rir até quando eu tô cansado,
+          a garota que deixa tudo mais leve,
+          mais bonito e mais feliz.
+          
+          Obrigado por existir e por ser exatamente desse jeitinho que eu amo tanto.
+          ❤
+        </p>
+      </div>
+
+      <div className="mt-16">
+        <h2 className="text-4xl font-extrabold text-center text-rose-600 mb-10">
+          Quiz do Nosso Amor 😂❤
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          {perguntas.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-3xl p-6 shadow-xl hover:-translate-y-2 transition duration-300"
+            >
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                {item.pergunta}
+              </h3>
+
+              <button
+                onClick={() => alert(item.resposta)}
+                className="bg-rose-500 hover:bg-rose-600 text-white px-6 py-3 rounded-full font-bold transition duration-300"
+              >
+                Ver resposta 😏
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="mt-16 text-center">
+        <h2 className="text-4xl font-extrabold text-rose-600 mb-8">
+          Motivos pelos quais eu amo a Amanda ❤
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-5 text-left">
+          <div className="bg-white p-5 rounded-3xl shadow-lg">
+            ✔ Porque ela consegue me fazer feliz sem esforço.
+          </div>
+
+          <div className="bg-white p-5 rounded-3xl shadow-lg">
+            ✔ Porque o sorriso dela é perfeito.
+          </div>
+
+          <div className="bg-white p-5 rounded-3xl shadow-lg">
+            ✔ Porque ela é minha melhor companhia.
+          </div>
+
+          <div className="bg-white p-5 rounded-3xl shadow-lg">
+            ✔ Porque até quando ela briga comigo continua linda.
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-16 text-center">
+        <button
+          className="bg-white text-rose-600 font-extrabold text-xl px-10 py-5 rounded-full shadow-2xl hover:scale-110 transition duration-300"
+          onClick={() => alert('Amanda, eu te amo infinitamente ❤')}>
+          Clique aqui pra receber amor infinito 💘
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div className="absolute top-10 left-10 text-6xl animate-bounce">❤</div>
+  <div className="absolute top-32 right-16 text-5xl animate-pulse">💕</div>
+  <div className="absolute bottom-20 left-20 text-5xl animate-bounce">✨</div>
+  <div className="absolute bottom-10 right-10 text-6xl animate-pulse">❤</div>
+</div>
+
+) }
